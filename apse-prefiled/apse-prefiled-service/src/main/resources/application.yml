@@ -1,0 +1,9 @@
+server.port: 8082
+spring.application.name: apse-prefiled-service
+
+logging.path: ${user.home}/logs
+
+com.alipay.sofa.rpc:
+  bolt.port: 22001
+  registry.address: local://${user.home}/logs/localRegistry.reg
+#  registry.address: zookeeper://192.168.206.182:2181

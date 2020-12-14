@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.returncode.apseboot</groupId>
+		<artifactId>apse-center</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.returncode.apseboot</groupId>
+	<artifactId>apse-center-service</artifactId>
+	<version>${parent.version}</version>
+	<name>apse-center-service</name>
+	<description>Apseboot project for Sofa Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.returncode.apseboot</groupId>
+			<artifactId>apse-center-api</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.returncode.apseboot</groupId>
+			<artifactId>apse-prefiled-api</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${user.home}/.m2/repository/com/returncode/apseboot/apse-prefiled-api/1.0.1-SNAPSHOT/apse-prefiled-api-1.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
