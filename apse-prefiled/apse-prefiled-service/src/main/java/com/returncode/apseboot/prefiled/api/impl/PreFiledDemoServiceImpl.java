@@ -11,6 +11,7 @@ public class PreFiledDemoServiceImpl implements PreFiledDemoService {
 
     @Override
     public String callPreFiled(String name) {
-        return " callPreFiled " + name;
+        throw new RuntimeException("业务异常");
+//        return " callPreFiled " + name;
     }
 }

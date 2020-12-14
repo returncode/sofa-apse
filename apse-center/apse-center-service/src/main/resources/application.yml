@@ -5,5 +5,5 @@ logging.path: ${user.home}/logs
 
 com.alipay.sofa.rpc:
   bolt.port: 22000
-  registry.address: local://${user.home}/logs/localRegistry.reg
-#  registry.address: zookeeper://192.168.206.182:2181
+  registry.address: zookeeper://192.168.206.182:2181
+#  registry.address: local://${user.home}/logs/localRegistry.reg
