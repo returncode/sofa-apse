@@ -30,7 +30,7 @@
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </root>
-    <logger name="com.returncode.apseboot.center" level="debug" additivity="false">
+    <logger name="com.returncode.apseboot" level="debug" additivity="false">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </logger>

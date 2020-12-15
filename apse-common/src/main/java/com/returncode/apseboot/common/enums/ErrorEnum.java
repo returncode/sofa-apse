@@ -7,15 +7,15 @@ public enum ErrorEnum {
     /**
      * 数据结果为空
      */
-    NULL_RESULT(5555, "Null Result Error", "数据结果为空"),
+    NULL_RESULT(555, "Null Result Error", "数据结果为空"),
     /**
      * 用户名或密码错误
      */
-    ACCOUNT_PWD_ERROR(5556, "Account Password Error", "用户名或密码错误"),
+    ACCOUNT_PWD_ERROR(556, "Account Password Error", "用户名或密码错误"),
     /**
      * 服务器未知错误
      */
-    UNDEFINED_EXCEPTION(5599, "Server Undefined Exception", "服务器未知错误");
+    UNDEFINED_EXCEPTION(599, "Server Undefined Exception", "服务器未知错误");
 
     private int state;
     private String error;

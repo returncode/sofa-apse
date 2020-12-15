@@ -40,29 +40,3 @@ spring.redis:
     pool.max-wait: 30000
     pool.max-idle: 20
     pool.min-idle: 0
-
-# mysql
-spring.datasource:
-  type: com.alibaba.druid.pool.DruidDataSource
-  driver-class-name: com.mysql.jdbc.Driver
-  url: jdbc:mysql://127.0.0.1:3306/archives?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
-  username: root
-  password: 123456
-  druid:
-    initial-size: 8 #初始化时建立物理连接的个数
-    max-active: 10 #最大连接池数量
-    min-idle: 8 #最小连接池数量
-    max-wait: 60000 #获取连接时最大等待时间，单位毫秒
-    filters: stat,wall #开启监控统计,防御sql注入过滤器
-    web-stat-filter.enabled: true #是否开启druid数据库监控
-    stat-view-servlet.enabled: true #是否开启druid监控页面
-    stat-view-servlet.allow :
-    stat-view-servlet.login-username: admin
-    stat-view-servlet.login-password: admin123
-    filter.stat.log-slow-sql: true #是否开启慢sql查询监控
-    filter.stat.slow-sql-millis: 1 #慢SQL执行时间
-
-# mybatis
-mybatis:
-  type-aliases-package: com.returncode.apseboot.center.*.entity
-  mapper-locations: classpath:mapper/*Mapper.xml
