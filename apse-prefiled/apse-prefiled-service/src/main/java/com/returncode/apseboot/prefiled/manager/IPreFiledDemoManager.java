@@ -6,5 +6,6 @@ package com.returncode.apseboot.prefiled.manager;
  */
 public interface IPreFiledDemoManager {
 
+    String doPreFiledMananger(String name);
 
 }
